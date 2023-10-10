@@ -244,6 +244,9 @@ img {
   border: none;
 }
 
+.nav .nav__button:hover {
+  background-color: var(--first-color);
+
 /* Show menu */
 .show-menu {
   right: 0;
