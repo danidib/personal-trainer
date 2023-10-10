@@ -593,7 +593,7 @@ img {
 }
 
 .pricing__button:hover {
-  background-color: var(--title-color);
+  background-color: var(--first-color);
 }
 
 .pricing__card-active {
@@ -614,6 +614,9 @@ img {
 .pricing__card-active .pricing__item {
   color: var(--title-color-black);
 }
+
+.pricing__card-active .pricing__button:hover {
+  background-color: var(--title-color);
 
 /*=============== CALCULATE ===============*/
 .calculate {
