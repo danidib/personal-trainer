@@ -188,6 +188,11 @@ img {
   align-items: center;
   column-gap: 0.5rem;
   font-weight: var(--font-bold);
+  transition: transform 0.3s;
+}
+
+.nav__logo:hover {
+  transform: scale(1.1);
 }
 
 .nav__logo img {
