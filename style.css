@@ -625,6 +625,7 @@ img {
 
 .pricing__card-active .pricing__button:hover {
   background-color: var(--title-color);
+}
 
 /*=============== CALCULATE ===============*/
 .calculate {
