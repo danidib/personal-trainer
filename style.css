@@ -6,6 +6,7 @@
   --header-height: 3.5rem;
 
   /*========== Colors ==========*/
+  /*Color mode HSL(hue, saturation, lightness)*/
   --first-color: hsl(57, 100%, 50%);
   --first-color-light: hsl(57, 97%, 77%);
   --first-color-alt: hsl(57, 67%, 52%);
@@ -251,6 +252,7 @@ img {
 
 .nav .nav__button:hover {
   background-color: var(--first-color);
+}
 
 /* Show menu */
 .show-menu {
@@ -549,7 +551,7 @@ img {
 
 .pricing__card {
   row-gap: 2rem;
-  background-color: hsla(79, 6%, 64%, 0.07);
+  background-color: hsla(57, 6%, 64%, 0.07);
   padding: 2rem 2.5rem;
 }
 
@@ -673,6 +675,7 @@ img {
 
 .calculate__input[type="number"] {
   -moz-appearance: textfield;
+  appearance: textfield;
 }
 
 .calculate__label {
