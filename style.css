@@ -599,7 +599,7 @@ img {
 }
 
 .pricing__button {
-  background-color: var(--title-color);
+  background-color: var(--first-color);
 }
 
 .pricing__button:hover {
@@ -616,7 +616,7 @@ img {
 }
 
 .pricing__card-active .pricing__item i {
-  color: var(--title-color);
+  color: var(--title-color-black);
 }
 
 .pricing__card-active .pricing__title,
@@ -625,8 +625,9 @@ img {
   color: var(--title-color-black);
 }
 
-.pricing__card-active .pricing__button:hover {
-  background-color: var(--title-color);
+.pricing__card-active .pricing__button {
+  border: 2px solid var(--title-color-black);
+  background-color: var(--first-color);
 }
 
 /*=============== CALCULATE ===============*/
