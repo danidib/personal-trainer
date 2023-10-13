@@ -248,6 +248,7 @@ img {
 .nav .nav__button {
   background-color: var(--title-color);
   border: none;
+  transition: background 0.3s;
 }
 
 .nav .nav__button:hover {
@@ -389,7 +390,7 @@ img {
 
 .program__card {
   display: grid;
-  background-color: hsla(79, 6%, 64%, 0.07);
+  background-color: hsla(57, 6%, 64%, 0.07);
   padding: 1.5rem 2rem;
   border: 2px solid transparent;
   transition: background 0.5s, border 0.4s;
@@ -603,7 +604,7 @@ img {
 }
 
 .pricing__button:hover {
-  background-color: var(--first-color);
+  background-color: var(--first-color-dark);
 }
 
 .pricing__card-active {
@@ -628,6 +629,10 @@ img {
 .pricing__card-active .pricing__button {
   border: 2px solid var(--title-color-black);
   background-color: var(--first-color);
+}
+
+.pricing__card-active .pricing__button:hover {
+  background-color: var(--first-color-dark);
 }
 
 /*=============== CALCULATE ===============*/
