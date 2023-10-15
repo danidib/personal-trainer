@@ -98,11 +98,11 @@ const calculateBmi = (e) => {
     calculateMessage.classList.remove("color-green");
     calculateMessage.classList.add("color-red");
     // Show message
-    calculateMessage.textContent = "Fill in the Height and Weight";
+    calculateMessage.textContent = "Completează Înălțimea si Greutatea";
     // Remove message three seconds
     setTimeout(() => {
       calculateMessage.textContent = "";
-    }, 3000);
+    }, 4000);
   } else {
     // BMI formula
     const cm = calculateCm.value / 100,
@@ -113,13 +113,13 @@ const calculateBmi = (e) => {
     if (bmi < 18.5) {
       // Add color and display message
       calculateMessage.classList.add("color-green");
-      calculateMessage.textContent = `Your BMI is ${bmi} and you are skinny`;
+      calculateMessage.textContent = `IMC-ul tău este ${bmi} și ești subponderal`;
     } else if (bmi < 25) {
       calculateMessage.classList.add("color-green");
-      calculateMessage.textContent = `Your BMI is ${bmi} and you are Healthy`;
+      calculateMessage.textContent = `IMC-ul tău este ${bmi} și ai masă corporală normală`;
     } else {
       calculateMessage.classList.add("color-green");
-      calculateMessage.textContent = `Your BMI is ${bmi} and you are OVERWEIGHT`;
+      calculateMessage.textContent = `IMC-ul tău este ${bmi} și ești supraponderal`;
     }
 
     // To clear the input field
@@ -129,7 +129,7 @@ const calculateBmi = (e) => {
     // Remove message four seconds
     setTimeout(() => {
       calculateMessage.textContent = "";
-    }, 4000);
+    }, 5000);
   }
 };
 
@@ -150,7 +150,7 @@ const sendEmail = (e) => {
     contactMessage.classList.add("color-red");
 
     // Snow message
-    contactMessage.textContent = "You must enter your mail";
+    contactMessage.textContent = "Introduceți adresa de email";
 
     // Remove message three seconds
     setTimeout(() => {
@@ -169,7 +169,7 @@ const sendEmail = (e) => {
         () => {
           // Show message and add color
           contactMessage.classList.add("color-green");
-          contactMessage.textContent = "You registered successfully";
+          contactMessage.textContent = "Înregistrare completă";
 
           // Remove message after three seconds
           setTimeout(() => {
@@ -178,7 +178,7 @@ const sendEmail = (e) => {
         },
         (error) => {
           // Mail sending error
-          alert("OOPS! SOMETHING HAS FAILED...", error);
+          alert("OOPS! A APARUT O EROARE...", error);
         }
       );
 
