@@ -1,4 +1,4 @@
-/*=============== SHOW MENU ===============*/
+/* =============== SHOW MENU =============== */
 const navMenu = document.getElementById("nav-menu"),
   navToggle = document.getElementById("nav-toggle"),
   navClose = document.getElementById("nav-close");
@@ -10,14 +10,14 @@ if (navToggle) {
   });
 }
 
-/*=============== MENU HIDDEN ===============*/
+/* =============== MENU HIDDEN =============== */
 if (navClose) {
   navClose.addEventListener("click", () => {
     navMenu.classList.remove("show-menu");
   });
 }
 
-/*=============== REMOVE MENU MOBILE ===============*/
+/* =============== REMOVE MENU MOBILE =============== */
 const navLink = document.querySelectorAll(".nav__link");
 
 const linkAction = () => {
@@ -27,7 +27,7 @@ const linkAction = () => {
 };
 navLink.forEach((n) => n.addEventListener("click", linkAction));
 
-/*=============== CHANGE BACKGROUND HEADER ===============*/
+/* =============== CHANGE BACKGROUND HEADER =============== */
 const scrollHeader = () => {
   const header = document.getElementById("header");
   // When the scroll is greater than 50 viewport height, add the scroll-header class to the header tag
@@ -37,7 +37,7 @@ const scrollHeader = () => {
 };
 window.addEventListener("scroll", scrollHeader);
 
-/*=============== SCROLL SECTIONS ACTIVE LINK ===============*/
+/* =============== SCROLL SECTIONS ACTIVE LINK =============== */
 const sections = document.querySelectorAll("section[id]");
 
 const scrollActive = () => {
@@ -58,7 +58,7 @@ const scrollActive = () => {
 };
 window.addEventListener("scroll", scrollActive);
 
-/*=============== SHOW SCROLL UP ===============*/
+/* =============== SHOW SCROLL UP =============== */
 const scrollUp = () => {
   const scrollUp = document.getElementById("scroll-up");
   // When the scroll is higher than 350 viewport heigh, add the show-scroll class to the a tag with scrollup
@@ -68,7 +68,7 @@ const scrollUp = () => {
 };
 window.addEventListener("scroll", scrollUp);
 
-/*=============== SCROLL REVEAL ANIMATION ===============*/
+/* =============== SCROLL REVEAL ANIMATION =============== */
 const sr = ScrollReveal({
   origin: "top",
   distance: "60px",
@@ -84,7 +84,7 @@ sr.reveal(`.choose__img, .calculate__content`, { origin: "left" });
 sr.reveal(`.choose__content, .calculate__img`, { origin: "right" });
 sr.reveal(`.home__images, .logos__container, .choose__images, .calculate__img`, { reset: true });
 
-/*=============== CALCULATE JS ===============*/
+/* =============== CALCULATE JS =============== */
 const calculateForm = document.getElementById("calculate-form"),
   calculateCm = document.getElementById("calculate-cm"),
   calculateKg = document.getElementById("calculate-kg"),
@@ -135,7 +135,7 @@ const calculateBmi = (e) => {
 
 calculateForm.addEventListener("submit", calculateBmi);
 
-/*=============== EMAIL JS ===============*/
+/* =============== EMAIL JS =============== */
 const contactForm = document.getElementById("contact-form"),
   contactMessage = document.getElementById("contact-message"),
   contactUser = document.getElementById("contact-user");
